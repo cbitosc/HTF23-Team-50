@@ -1,76 +1,164 @@
-# HTF23-Team-50
+# Django Student Management System (beta)
+This is a Simple Student Management System Developed for Educational Purpose using Python (Django).
+Feel free to make changes based on your requirements.
 
-## GitHub submission guide
+[Project Demo on YouTube](https://www.youtube.com/watch?v=kArCR96m7uo "Django Student Management System Demo")
 
-In this Readme, you will find a guide on how to fork this Repository, add files to it, and make a pull request to contribute your changes.
+I've created this project while learnging Django and followed tutorial series from **SuperCoders**
 
-<details open>
-<summary><h3>1. Login to your GitHub Account by heading over to <a href="https://github.com">github.com</a></h3></summary>
-<br>
-<ul>
-   <li>Open the <a href="https://github.com/cbitosc/HTF23-Team-50">current repo</a> in a new tab.</li>
-   <li>Perform all operations in the newly opened tab, and follow the current tab for instructions.</li>
-</ul>
-</details>
+And if you like this project then ADD a STAR ⭐️  to this project 👆
 
-<details>
-<summary><h3>2. Fork the Repository</h3></summary>
-<br>
-<ul>
- <li>In the newly opened tab, on the top-right corner, click on <b>Fork</b></li>
- <img src="/images/fork.png">
+## Features of this Project
 
- <li>Enter the <b>Repository Name</b> as <b>HTF23-Team-50 (your team number)</b>.</li>
- <li>Then click <b>Create Fork</b> leaving all other fields to their default value.</li>
- <img src="/images/create-fork.png">
- <li>After a few moments, you can view the repo.</li>
-</ul>
-</details>
+### A. Admin Users Can
+1. See Overall Summary Charts of Stuudents Performance, Staffs Perfomrances, Courses, Subjects, Leave, etc.
+2. Manage Staffs (Add, Update and Delete)
+3. Manage Students (Add, Update and Delete)
+4. Manage Course (Add, Update and Delete)
+5. Manage Subjects (Add, Update and Delete)
+6. Manage Sessions (Add, Update and Delete)
+7. View Student Attendance
+8. Review and Reply Student/Staff Feedback
+9. Review (Approve/Reject) Student/Staff Leave
 
-<details>
-<summary><h3>3. Clone your Repository</h3></summary>
-<br>
-<ul>
- <li>Click on <b>Code</b> and from the dropdown menu copy your <b>web URL</b> in your forked Repository. </li>
- <img src="/images/clone1.png">
- <li>Now open terminal on your local machine.</li>
- <li>Use the following command to clone your forked Repository:</li>
-<code> git clone https://github.com/your-username/HTF23-Team-50.git </code>
-<hr>
- <img src="/images/clone2.png">
+### B. Staff/Teachers Can
+1. See the Overall Summary Charts related to their students, their subjects, leave status, etc.
+2. Take/Update Students Attendance
+3. Add/Update Result
+4. Apply for Leave
+5. Send Feedback to HOD
 
-</ul>
-</details>
+### C. Students Can
+1. See the Overall Summary Charts related to their attendance, their subjects, leave status, etc.
+2. View Attendance
+3. View Result
+4. Apply for Leave
+5. Send Feedback to HOD
 
-<details>
-<summary><h3>4. Adding files to the Repository</h3></summary>
-<br/>
-<ul>
- <li>While doing it for the first time, create a new branch for your changes.</li>
-   <code> git checkout -b branch-name </code>
-   <li>Add your files or make modifications to existing files.</li>
-   <li>Stage your changes:</li>
-   <code> git add . </code>
-   <li>Commit your changes:</li>
-   <code> git commit -m "Descriptive commit message" </code>
-   <li>Push changes to your fork </li>
-   <code> git push origin branch-name </code>
-   <hr>
-   
- <img src="/images/push.png">
-</ul>
-</details>
 
-<details>
-<summary><h3>5. Create a Pull Request</h3></summary>
-   <br>
-<ul>
- <li>Finally, click on the <b>Contribute</b> button and choose <b>Open Pull Request</b>.</li>
- <img src="/images/PR1.png">
- <li>Leaving all fields to their default values, click on <b>Create Pull Request</b>.</li>
- <img src="/images/PR2.png">
- <li>Wait for a few moments, then you are all done</li>
-</ul>
-</details>
+## Support Developer
+1. Subscribe & Share my YouTube Channel - https://bit.ly/vijay-thapa-online-courses
+2. Add a Star 🌟  to this 👆 Repository
 
-## Thanks for participating!
+
+## Donate
+
+**[PayPal](https://bit.ly/support-vijay-thapa)**
+
+**[Buy me a Coffee  ☕️](https://www.buymeacoffee.com/vijaythapa)**
+
+**Donate by wire transfer:** E-Mail at *donate@vijaythapa.com* for wire transfer details. 
+
+
+## How to Install and Run this project?
+
+### Pre-Requisites:
+1. Install Git Version Control
+[ https://git-scm.com/ ]
+
+2. Install Python Latest Version
+[ https://www.python.org/downloads/ ]
+
+3. Install Pip (Package Manager)
+[ https://pip.pypa.io/en/stable/installing/ ]
+
+*Alternative to Pip is Homebrew*
+
+### Installation
+**1. Create a Folder where you want to save the project**
+
+**2. Create a Virtual Environment and Activate**
+
+Install Virtual Environment First
+```
+$  pip install virtualenv
+```
+
+Create Virtual Environment
+
+For Windows
+```
+$  python -m venv venv
+```
+For Mac
+```
+$  python3 -m venv venv
+```
+
+Activate Virtual Environment
+
+For Windows
+```
+$  source venv/scripts/activate
+```
+
+For Mac
+```
+$  source venv/bin/activate
+```
+
+**3. Clone this project**
+```
+$  git clone https://github.com/vijaythapa333/django-student-management-system.git
+```
+
+Then, Enter the project
+```
+$  cd django-student-management-system
+```
+
+**4. Install Requirements from 'requirements.txt'**
+```python
+$  pip install -r requirements.txt
+```
+
+**5. Add the hosts**
+
+- Got to settings.py file 
+- Then, On allowed hosts, Add [‘*’]. 
+```python
+ALLOWED_HOSTS = ['*']
+```
+*No need to change on Mac.*
+
+
+**6. Now Run Server**
+
+Command for PC:
+```python
+$ python manage.py runserver
+```
+
+Command for Mac:
+```python
+$ python3 manage.py runserver
+```
+
+**7. Login Credentials**
+
+Create Super User (HOD)
+```
+$  python manage.py createsuperuser
+```
+Then Add Email, Username and Password
+
+**or Use Default Credentials**
+
+*For HOD /SuperAdmin*
+Email: admin@gmail.com
+Password: admin
+
+*For Staff*
+Email: staff@gmail.com
+Password: staff
+
+*For Student*
+Email: student@gmail.com
+Password: student
+
+
+
+## For Sponsor or Projects Enquiry
+1. Email - hi@vijaythapa.com
+2. LinkedIn - [vijaythapa](https://www.linkedin.com/in/vijaythapa "Vijay Thapa on LinkedIn")
+
